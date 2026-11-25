@@ -13,8 +13,8 @@ $script:OpsTrustedModulePublishers = @{
     'PSTree'         = @{ Author = 'Santiago Squarzon'; CompanyName = 'santisq' }
 }
 
-# Prefer explicit app/data roots so the profile can live under E:\Projects\apps
-# and generated state can live under E:\Projects\data.
+# Prefer explicit app/data roots so the profile can live under a dedicated apps directory
+# and generated state can live under a dedicated data directory.
 $script:OpsAppsRoot = if ($env:Ops_APPS_ROOT) { $env:Ops_APPS_ROOT } elseif ($env:Ops_APP_ROOT) { $env:Ops_APP_ROOT } else { $null }
 $script:OpsDataRoot = if ($env:Ops_DATA_ROOT) { $env:Ops_DATA_ROOT } elseif ($env:Ops_STORAGE_ROOT) { $env:Ops_STORAGE_ROOT } else { $null }
 
@@ -58,7 +58,7 @@ Get-ChildItem "$privatePath\*.ps1" -ErrorAction SilentlyContinue | ForEach-Objec
 Import-OpsConfiguration | Out-Null
 
 # Environment-driven roots should win over persisted defaults so the shell can
-# be relocated cleanly to E:\Projects\apps and E:\Projects\data.
+# be relocated cleanly to a dedicated apps directory and data directory.
 if ($env:Ops_PROJECT_ROOT) {
     $script:OpsDefaultProjectRoot = $env:Ops_PROJECT_ROOT
     $global:OpsProjectRoot = $env:Ops_PROJECT_ROOT

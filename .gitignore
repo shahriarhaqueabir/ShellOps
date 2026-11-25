@@ -80,3 +80,9 @@ credentials.*
 # PLAYBOOK (teaching material, kept local/private)
 # ─────────────────────────────────────────────
 docs/playbook*.md
+
+# Private modules (secrets, adapters, config - never committed)
+private/
+private/secrets/
+private/adapters/
+private/config/
