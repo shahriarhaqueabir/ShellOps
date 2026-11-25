@@ -3,6 +3,7 @@
 <p align="center">
   <img src="ShellOps.jpg" alt="ShellOps" width="400">
 </p>
+
 > **Advanced Operational Intelligence & Universal AI Companion for Windows.**
 > Private. High-Performance. Local Agentic Stack. 81 utility tools · 7
 > operational workflows · zero cloud dependencies. 🛡️
