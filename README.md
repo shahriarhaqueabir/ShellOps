@@ -172,7 +172,6 @@ _Requirements: PowerShell 7.2+, Git, Ollama (optional)._
 
 | View 1 | View 2 | View 3 |
 |---|---|---|
-| ![screenshot 1](docs/screenshots/1.png) | ![screenshot 2](docs/screenshots/2.png) | ![screenshot 3](docs/screenshots/3.png) |
 
 > Add your own screenshots under docs/screenshots/.
 
