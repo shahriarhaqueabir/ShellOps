@@ -1,5 +1,8 @@
-# PowershellOps ⚡ — Universal AI Companion for Windows
+# ShellOps - PowerShell Operations Dashboard
 
+<p align="center">
+  <img src="ShellOps.jpg" alt="ShellOps" width="400">
+</p>
 > **Advanced Operational Intelligence & Universal AI Companion for Windows.**
 > Private. High-Performance. Local Agentic Stack. 81 utility tools · 7
 > operational workflows · zero cloud dependencies. 🛡️
@@ -11,6 +14,12 @@
 [![Version](https://img.shields.io/badge/Version-11.3-orange)](#)
 
 ---
+
+## Fun things you can do
+
+- Ask your terminal anything: "why did this command fail?" and get an answer
+- Get a real-time system dashboard in your terminal - CPU, RAM, disk, network
+- Use 90+ one-word aliases to do everything from the prompt
 
 ## 🎬 The story — why this exists
 
