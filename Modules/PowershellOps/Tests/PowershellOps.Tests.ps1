@@ -5,6 +5,10 @@ BeforeAll {
     $script:moduleManifest = Join-Path $PSScriptRoot '..' 'PowershellOps.psd1'
     $script:modulePath = Join-Path $PSScriptRoot '..' 'PowershellOps.psm1'
 
+    # Pin default project root to this repo so onboarding defaults resolve deterministically
+    $script:repoRoot = Split-Path (Split-Path (Split-Path $PSScriptRoot -Parent) -Parent) -Parent
+    $env:Ops_PROJECT_ROOT = $script:repoRoot
+
     # Ensure module can be imported without errors
     Import-Module $script:moduleManifest -Force -ErrorAction Stop
 
