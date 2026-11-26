@@ -5,7 +5,7 @@ Thanks for your interest! This project is a PowerShell 7 module and profile — 
 ## Getting Started
 
 1. Fork the repository.
-2. Clone your fork: `git clone https://github.com/your-username/PowershellOps.git`
+2. Clone your fork: `git clone https://github.com/your-username/ShellOps.git`
 3. Create a feature branch: `git checkout -b feature/my-thing`
 
 ## Code Conventions
@@ -39,6 +39,6 @@ This runs PSScriptAnalyzer (Error/Warning severity) and all Pester tests.
 
 ## Questions?
 
-Open a [GitHub Issue](https://github.com/shahriarhaqueabir/PowershellOps/issues).
+Open a [GitHub Issue](https://github.com/shahriarhaqueabir/ShellOps/issues).
 
 

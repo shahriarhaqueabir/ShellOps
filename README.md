@@ -153,7 +153,7 @@ graph TD
 ## 🚀 Provisioning
 
 ```powershell
-irm https://raw.githubusercontent.com/shahriarhaqueabir/PowershellOps/main/install.ps1 | iex
+irm https://raw.githubusercontent.com/shahriarhaqueabir/ShellOps/main/install.ps1 | iex
 ```
 
 _Requirements: PowerShell 7.2+, Git, Ollama (optional)._

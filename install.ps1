@@ -2,7 +2,7 @@
 # 󰉏 PowershellOps - Magic One-Liner Installer
 # ==============================================================================
 # This script automates the full setup for a fresh PC.
-# Run: irm https://raw.githubusercontent.com/shahriarhaqueabir/PowershellOps/main/install.ps1 | iex
+# Run: irm https://raw.githubusercontent.com/shahriarhaqueabir/ShellOps/main/install.ps1 | iex
 
 $ErrorActionPreference = 'Stop'
 
@@ -37,7 +37,7 @@ if (Test-Path (Join-Path $installDir ".git")) {
     git pull
     Pop-Location
 } else {
-    git clone https://github.com/shahriarhaqueabir/PowershellOps.git $installDir
+    git clone https://github.com/shahriarhaqueabir/ShellOps.git $installDir
 }
 
 # 4. Profile Wiring
