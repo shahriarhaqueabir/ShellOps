@@ -8,7 +8,7 @@
 > Private. High-Performance. Local Agentic Stack. 81 utility tools · 7
 > operational workflows · zero cloud dependencies. 🛡️
 
-[![CI](https://github.com/shahriarhaqueabir/PowershellOps/actions/workflows/ci.yml/badge.svg)](https://github.com/shahriarhaqueabir/PowershellOps/actions/workflows/ci.yml)
+[![CI](https://github.com/shahriarhaqueabir/ShellOps/actions/workflows/ci.yml/badge.svg)](https://github.com/shahriarhaqueabir/ShellOps/actions/workflows/ci.yml)
 [![PowerShell](https://img.shields.io/badge/PowerShell-7.6_LTS-0078D4?logo=powershell&logoColor=white)](#)
 [![AI](<https://img.shields.io/badge/AI-Ollama_(local)-8A2BE2?logo=ollama&logoColor=white>)](#)
 [![License](https://img.shields.io/badge/License-MIT-green)](#)

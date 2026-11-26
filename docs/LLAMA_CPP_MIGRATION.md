@@ -15,14 +15,14 @@ The following config changes have already been applied:
   - `AIModel` → `Qwythos-9B-Claude-Mythos-5-1M-Q4_K_M.gguf` (was `OpsPowershell`)
   - Added `LlamaServerPort: 18000`
   - Added `LlamaServerFallbackPort: 18001`
-  - Added `ModelsDir: E:\Projects\ai\models`
+  - Added `ModelsDir: <models directory>`
   - Added `_migration` note
 
 Code still calls Ollama endpoints — migration of AI.ps1 etc. is still needed.
 
 ## Target State
 - Use llama.cpp `llama-server` on a configurable port (default: 18000)
-- Model: GGUF file from `E:\Projects\ai\models\`
+- Model: GGUF file from `<models directory>\`
 - OpenAI-compatible API (`/v1/chat/completions`, `/v1/completions`)
 
 ## Migration Steps
@@ -58,7 +58,7 @@ Invoke-RestMethod -Uri "http://127.0.0.1:18000/v1/chat/completions" -Method POST
 ```
 
 ### Phase 3: Model Selection
-- Default model: `Qwythos-9B-Claude-Mythos-5-1M-Q4_K_M.gguf` (already in `E:\Projects\ai\models\`)
+- Default model: `Qwythos-9B-Claude-Mythos-5-1M-Q4_K_M.gguf` (already in `<models directory>\`)
 - Allow user to specify model via `ops-settings.json` → `AIModel` field (now a filename instead of Ollama model name)
 - Update `Onboarding.ps1` to let user pick from available GGUF files
 
@@ -83,8 +83,8 @@ Invoke-RestMethod -Uri "http://127.0.0.1:18000/v1/chat/completions" -Method POST
 - `Modules/PowershellOps/Private/Helpers.ps1` — server management helpers
 
 ## Dependencies
-- llama.cpp v1.0.0 at `E:\Projects\tools\llama-b12359\` (on PATH)
-- At least one GGUF model in `E:\Projects\ai\models\`
+- llama.cpp v1.0.0 at `<llama.cpp install directory>` (on PATH)
+- At least one GGUF model in `<models directory>\`
 
 ## Estimated Effort
 - Phase 1-2: 2-3 hours
